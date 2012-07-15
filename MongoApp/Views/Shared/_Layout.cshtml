@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/Common/jquery-1.7.1.min.js")" type="text/javascript"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Common/json2.js")"></script>
+    <script type="text/javascript">
+        var rootUrl = '@Url.Content("~")';
+    </script>
+</head>
+
+<body>
+    @RenderBody()
+</body>
+</html>

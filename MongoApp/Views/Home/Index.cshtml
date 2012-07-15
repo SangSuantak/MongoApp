@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<h2>
+    Welcome to an Application created with MongoDB</h2>
+<div>
+    <h3>Departments</h3>
+    <div id="divDepartments">
+        
+    </div>
+    <fieldset>
+        <legend>Add Deparment</legend>
+        <table border="0" cellpadding="3" cellspacing="0">
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Department Name :
+                    </td>
+                    <td>
+                        <input type="text" id="txtDeptName" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Head of Department ID :
+                    </td>
+                    <td>
+                        <input type="text" id="txtHodId" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        <input type="button" value="Submit" id="btnSubmit" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</div>
+<div id="divMessage"></div>
+<script type="text/javascript" src="@Url.Content("~/Scripts/App/Index.js")"></script>
